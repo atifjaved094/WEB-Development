@@ -1,0 +1,88 @@
+"DAY 1 of Learning HTML "
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidel</title>
+    <link rel="stylesheet" href="fidel.css">
+</head>
+<body>
+    <header id = "header">
+        <h1>This is Fidel We Provide Web Services according to your requirment</h1> 
+    </header>
+    <nav>
+        <a target="_blank" href="home.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="About.html">About</a>
+    </nav>
+    <main>
+<h2>Fidel</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa, laborum, veritatis corrupti id quis maxime rem impedit sunt sit neque harum pariatur minima optio officia tempore fugit. Cupiditate eos quas sunt libero nemo obcaecati, nisi repellendus expedita dolore dolorem unde itaque. Rerum iste iusto nulla quod quaerat excepturi magnam?</p>
+        <form action="post">
+            <div>
+            <label for="name">Name</label>
+            <input type="text" id ="name" placeholder="Enter your Name">
+            </div>
+            <div>
+            <label for="birthdte">Name</label>
+            <input type="date" id ="birthday">
+            </div>
+            <div>
+            <label for="email">Name</label>
+            <input type="email" id ="email" placeholder="Enter your Email">
+            </div>
+            <div>
+                <label for="city">Select Your City</label>
+                <select name="City" id="city">
+                    <option value="Islamabad">Islamabad</option>
+                    <option value="Gujrat">Gujrat</option>
+                    <option value="Rawalpindi">Rawalpindi</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Karachi">Karachi</option>
+                </select>
+            </div>
+        </form>
+        <table>
+            <caption>Clinets Details</caption>
+            <tr>
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th>Email</th>
+            </tr>
+            <tr>
+            <td colspan="4">1.</td>
+            <td>ali</td>
+            <td>ali123#gmail.com</td>
+            <td></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Qasim</td>
+                <td>qASIM23@GMAIL.COM</td>
+            </tr>
+        </table>
+        <ul>
+            <caption>Unoreded List</caption>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+        </ul>
+        <caption>Ordered List</caption>
+        <ol>
+            <li>Jack</li>
+            <li>Jacky</li>
+            <li>Johson</li>
+            <li>Mike</li>
+        </ol>
+        <audio src=""></audio>
+        <img src="" alt="">
+        <video src=""></video>
+    </main>
+    <footer id = "footer">
+        &lt; &gt; 
+        &copy; this is the footer 
+    </footer>
+</body>
+</html>
