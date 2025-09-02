@@ -1,0 +1,70 @@
+#header{
+    background-color: rgb(17, 16, 17);
+    width: cover;
+    border: solid tomato;
+    color: rgb(243, 238, 238);
+    padding-left:3px;
+    margin: -px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav a:link{
+      /* background-color: rgb(202, 117, 13); */
+      font-family: fantasy;
+      font-size: larger;
+      text-decoration: none;
+      overflow: hidden;
+      display: flex;
+      /* justify-content: center; */
+      background-color: rgb(196, 209, 170);
+      padding: 2px;
+}
+.nav a:hover{
+    color: rgb(44, 199, 96);
+}
+.nav a:visited{
+    color: rgb(221, 74, 6);
+}
+.nav a:active{
+    color: rgb(47, 255, 20);
+}
+.alpha{
+    background-color: rgb(218, 111, 111);
+}
+#footer{
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    border: solid 2px rgb(67, 64, 224);
+}
+.foot a:link{
+    text-decoration: none;
+    color: rgb(240, 7, 7);
+    font-weight: bold;
+}
+.foot a:visited{
+    color: rgb(207, 17, 182);
+}
+.foot a:active{
+    color: rgb(112, 13, 204);
+}
+.foot a:hover{
+    color: rgb(25, 223, 230);
+}
+table{
+    border-top: solid 3px red;
+    border-bottom:groove 3px chocolate ;
+    border-left: dotted 4px rgb(207, 17, 182);
+    border-right: inset 5px rgb(84, 63, 205);
+    border-radius: 10px;
+    width: 100%;
+    text-align: Center;
+    font-size: larger;
+}
+body{
+    background-image: url(background.jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;    
+}
+/*  {
+color: rgb(226, 49, 43);
+} */
