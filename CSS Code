@@ -1,0 +1,216 @@
+CSS PRATICE AND IMPLEMENTATION
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+#header{
+    /* top: 0px;
+    position: sticky;
+    height: 70px;
+    width: 100%; */
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(17, 16, 17);
+    width: cover;
+    border: solid tomato;
+    color: rgb(212, 27, 27);
+    padding-left:3px;
+    overflow: visible;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+.nav{
+      
+      background-color: rgb(223, 49, 49);
+      top: 0px;
+      position: sticky;
+      height: px;
+      padding: 0px;
+      margin: 0px;
+}
+.nav a:link{
+      font-family: fantasy;
+      font-size: larger;
+      text-decoration: none;
+      overflow: hidden;
+      justify-content: center;
+      background-color: rgb(196, 209, 170);
+      padding: px;
+}
+.nav a:hover{
+    color: rgb(44, 199, 96);
+}
+.nav a:visited{
+    color: rgb(221, 74, 6);
+}
+.nav a:active{
+    color: rgb(47, 255, 20);
+}
+.alpha{
+    background-color: rgb(218, 111, 111);
+}
+#footer{
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    border: solid 2px rgb(67, 64, 224);
+}
+.foot a:link{
+    text-decoration: none;
+    color: rgb(240, 7, 7);
+    font-weight: bold;
+    color: hotpink;
+    background-color: yellow;
+    font-weight: bold;
+
+}
+.foot a:visited{
+    color: rgb(207, 17, 182);
+}
+.foot a:active{
+    color: rgb(112, 13, 204);
+}
+.foot a:hover{
+    color: rgb(25, 223, 230);
+}
+table{
+    position: relative;
+    top: 54px;
+    left: 30px;
+    bottom: 4px;
+    /* margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right:40px ; */
+    /* padding-top: 10px;
+    padding-right: 500px;
+    padding-left: 500px;
+    padding-bottom: 500px; */
+    outline: solid 10px rgb(9, 50, 128);
+    outline-offset: 4px;
+    outline-width: medium;
+    box-sizing: content-box;
+    padding: 10px;
+    margin: auto;
+    border-top: solid 3px red;
+    border-bottom:groove 3px chocolate ;
+    border-left: dotted 4px rgb(207, 17, 182);
+    border-right: inset 5px rgb(84, 63, 205);
+    border-radius: 10px;
+    width: 100%;
+    text-align: Center;
+    font-size: larger;
+    /* text-decoration: overline underline; */
+    text-transform: none;
+    text-indent: 10px;
+    /* letter-spacing: 2px; */
+    line-height: 1;
+    word-spacing: 10px;
+    white-space: normal;
+    color: rgb(34, 6, 1);
+    /* text-shadow: 5px 2px 5px rgb(42, 17, 185), 0px 0px 3px magenta; */
+    font-family: sans-serif;
+    font-style: oblique;
+    font-weight: 900;
+    /* font-variant: small-caps; */
+    border-spacing: 20px;
+    /* font-size: 40px; */
+    /* font-size: 1.4em; */
+    /* font-size: 2rem; */
+
+}
+/* img{
+    float: right;
+    clear: right;
+} */
+body{
+    background-image: url(background.jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;    
+}
+.summary{
+    border: solid;
+    width: 70%;
+    /* max-width: 500px; */
+}
+.map{
+    border: solid coral;
+    max-width: 700px;
+    /* padding: 40px; */
+    /* margin: 40px; */
+}
+/*  {
+color: rgb(226, 49, 43);
+} */
+ ul{
+    list-style-type: lower-roman;
+    background: salmon;
+    margin: 0px;
+    padding: 20PX;
+ }
+ /* ul li {
+    background: yellow;
+    color: blue;
+    margin: 5px;
+ } */
+ ol{
+    background: rgb(47, 26, 184);
+    padding: 20px;
+ }
+ ol li{
+    background: rgb(182, 102, 113);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin-left: 20px;
+ }
+ th,td{
+    border: solid 2px rgb(165, 123, 123);
+    border-bottom: dashed cornsilk;
+ }
+ th{
+    height: 70px;
+ }
+ td{
+    text-align: left;
+    height: 50px;
+    vertical-align: bottom;
+ }
+ /* tr:hover {
+    background-color: coral;
+} */
+ tr:nth-child(odd){
+    background-color: rgb(190, 228, 154);
+ }
+ .table{
+    overflow-x: auto;
+ }
+ .container {
+    padding: 10px;
+      display: flex;       /* places boxes in a row */
+      gap: 10px;           /* space between boxes */
+      justify-content: center; /* center them */
+      margin-top: 50px;
+    }
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      border: 2px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .box img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+ 
