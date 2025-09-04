@@ -1,0 +1,254 @@
+
+/* Variable in CSS to change colors */
+:root{ 
+  --color:red; 
+  --abc:rgb(158, 158, 0);
+  --defpad:20px;
+  --defborder:20px solid blue;
+}
+/* Used to remove all the by default padding,margin content-box */
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.logo{
+  /* background-color: var(--abc); */
+  /* color: var(--color); */
+    font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav {
+  /* border: var(--defborder); border through Global variable */
+  /* background-color: var(--color); Back Ground Color Change with the help of Global Variable. A variable become local when it is call or declared inside the element in css */
+  width: 100%;
+  height: 60px;
+  background-color: #000000;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  /* padding: var(--defpad);  padding adding through variable  */
+  position: sticky;  /* stays on top while scrolling */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Nav Links */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;   /*space between items: */
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 15px;
+}
+
+/* Hover & Active States */
+a:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+a:active {
+  background-color: #16a085;
+  color: white;
+}
+h2{
+  position: relative;
+  height: 50px;
+  top: 4px;
+  text-align: center;
+  color: white;
+  background-color: #2c3e50;
+  box-shadow:inset 2px 15px 10px #030505;
+
+}
+ol{
+  background-color: #2c3e50;
+  font-weight: bold;
+
+}
+li{
+  color: white;
+}
+.objective{
+  position: relative;
+  height: 50px;
+  text-align: center;
+  top: 5px;
+  position: relative; 
+  top: 0px;
+  /* left: 7px; */
+  z-index: 3;
+  color: rgb(255, 255, 255);
+  box-shadow:inset 2px 15px 10px #030505;
+  /* padding: 2px; */
+  /* margin: 4px; */
+  border: solid rgb(0, 0, 0);
+  background-color: #2c3e50;
+}
+.objective+p{
+  outline: 5px solid orange;
+  position: relative ;
+  z-index: 5;
+  outline-offset: 4px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  /* white-space: nowrap; */
+  /* border-radius: 100px; */
+  text-shadow: 10px 12px 4px rgb(8, 21, 201);
+  color: rgb(0, 0, 0);
+  display: inline-flex;
+  justify-content: center;
+  font-weight: bolder;
+  padding: 5px;
+  margin: 5px;
+   min-height: 70vh;  /*it set the height or width automatically viewport height or width vh, vw */
+  min-width: 5vw;
+  border: solid rgb(133, 65, 65) 2px;
+}
+table {
+  width: 80%;
+  margin: 20px auto;        /* center the table */
+  border-collapse: collapse; /* removes double borders */
+  font-size: 18px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+caption {
+  
+  box-shadow:inset 2px 15px 10px #030505;
+
+  caption-side: top;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+div.Box {
+  height: 190px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+div.Box-item {
+  height: 150px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+th, td {
+  border: 2px solid #ddd;
+  padding: 12px;
+}
+th {
+  background-color: #2c3e50;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+tr:hover {
+  background-color: #d1f0e1;
+}
+ol{
+
+  text-align: center;
+  text-indent: 5px;
+  line-height: 1.4pc;
+}
+caption{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  background-color: #2c3e50;
+}
+p{
+  color: white;
+  background-color: #2c3e50;
+  font-weight: lighter;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+}
+.article{
+  box-shadow:inset 2px 15px 10px #030505;
+
+  position: relative;
+  /* left: 300px; */
+  /* bottom: 190px; */
+  font-weight: bold;
+  min-height: 10vh;
+  min-width: 40vw;
+  overflow: auto;
+  font-size: larger;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: solid rgb(10, 8, 9);
+  background-color: #2c3e50;
+  color: white;
+}
+hr{
+  border: none;
+  border-top: solid 5px rgb(253, 248, 248);
+}
+.aside {
+  box-shadow:inset 2px 15px 10px #030505;
+
+  font-weight: bold;
+  position: relative;
+  background-color: #2c3e50;
+  color: whitesmoke;
+  /* bottom: 415px; */
+  /* height: 150px; */
+  /* width: 220px; */
+  min-height: 40vh;
+  min-width: 50vw;
+  overflow: auto;
+  border: solid rgb(245, 237, 237);
+}
+p img{
+  float: right;
+  margin: 10px;
+  width: 200px;
+}
+footer{
+  color: white;
+  padding: 2px;
+  position: relative;
+  background-color: #000000;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
+footer a{
+  
+  list-style-type: none;
+  text-decoration: none;
+  font-size: larger;
+  color: white;
+  display: flex;
+}
+.sprite{
+  height: 100px;
+  width: 80px;
+  background: url(sprite.png) no-repeat ;
+  background-position: 20px 1px;
+}
+
+/* Media Querires it red the color when screen width is less than 450px */
+@media only screen and (max-width:450px){
+  body{
+    background-color: red;
+  }
+}
