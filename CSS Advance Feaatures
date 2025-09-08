@@ -1,0 +1,326 @@
+css Advance Features 
+body{
+    background-image: linear-gradient(to bottom right,pink, black);
+    width: min(50%, 300px);
+    background-image: radial-gradient(pink,rgb(57, 57, 104),grey);
+     background-image: conic-gradient(red, yellow, green,pink,brown,grey);
+     border-radius: 50%;
+} 
+input[type=text]:focus{
+    width: 250px;
+    box-shadow: 10px 10px 25px red inset, 5px 10px 10px blue inset;
+    text-align: center;
+    transform: translate(100px 10px);
+    transform: rotate(200deg);
+     transform: scale(5,4); 
+     transform: scaleX(2); 
+     transform: scaleY(5); 
+     transform: skew(40deg); 
+     transform: skewX(50deg); 
+     transform: skew(10deg,20deg); 
+     transform: rotateX(150deg); 
+     transform: rotateY(120deg); 
+     transition-timing-function: linear; 
+     transition-timing-function: ease ease-in-out;
+}
+
+ @keyframes example {
+  2%   {background-color: red;}
+  3%   {background-color: rgb(83, 47, 129);}
+  4%   {background-color: rgb(184, 65, 121);}
+  5%   {background-color: rgb(0, 47, 255);}
+  6%   {background-color: rgb(211, 158, 44);}
+  10%   {background-color: rgb(32, 13, 13);}
+  10%   {background-color: red;}
+  25%  {background-color: rgb(0, 252, 96);}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+  The element to apply the animation to
+ footer {
+  width: 100px;
+  height: 100px;
+   background-color: red;
+   animation-name: example;
+  animation-duration: 4s;
+ } 
+@keyframes aside {
+    7% {background-color:red;}
+     50% {background-color:rgb(0, 255, 106);}
+    70% {background-color:rgb(255, 217, 0);}
+ 30% {background-color:rgb(25, 0, 255);}
+    40% {background-color:rgb(196, 133, 133);}
+    60% {background-color: green;}  */
+    
+}
+.aside{
+    width: 90px;
+    height:90px ;
+    /* background-color: aqua; */
+    animation-name: aside;
+    animation-duration: 2s;
+    /* animation-delay: 5s; */
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+}
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  bottom: 20px;
+  right: 15px;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/* img{
+    position: relative;
+    border-radius: 4px;
+    bottom: 40%;
+    left: 250%;
+    border-radius: 50%;
+    padding: 5px;
+    max-width:100%;
+    height: auto;
+} */
+ /* .img{
+    display: flex;
+    justify-content: center;
+ }
+ img{
+   width: 50%;
+   height: 200px;
+   object-fit: scale-down;
+   float: left;
+   clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+   /* shape-outside: circle(50%); */
+   /* filter: blur(4px);
+   filter: brightness(100%) ;
+   filter: grayscale(2);
+   filter: hue-rotate(70deg);
+   filter: invert(70%);
+   filter: sepia(60%);
+   clip-path: circle(50% at right); */
+   shape-outside: 50%;
+   filter: drop-shadow(8px 8px 10px rgb(228, 0, 0));
+    /* /* display: block;
+    margin: auto;
+    width: auto; */ } 
+img:hover */
+{
+    transform: scaleX(-1deg);
+}
+.mask1 {
+      width: 300px;
+      height: 150px;
+
+      /* Your image that should appear inside */
+      background: url("solid.jpg") fill/cover no-repeat;
+      /*  */
+      mask-image: url("shadow.png");
+      mask-repeat: no-repeat;
+      mask-position: center;
+      mask-size: contain;
+      mask-mode: luminance;
+      
+    }
+    .mask2{
+    -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+    }
+    .mask3{
+        max-width: 600px;
+  height: 350px;
+  overflow-y: scroll;
+  background: url(img_5terre.jpg) no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient (black, transparent);
+    }
+    .mask3 p{
+        max-width: 600px;
+  height: 350px;
+  overflow-y: scroll;
+  background: url(img_5terre.jpg) no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient (black, transparent);
+    }
+.mask4 {
+    height: 200px;
+    width: 150px;
+  -webkit-mask-image: radial-gradient(circle, black 20%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+.hello{
+    height: 100px;
+    width: 100px;
+    background: url(White.jpg);
+    mask-image: url(sprite.png);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    mask-mode: luminance;
+}
+.mouse{
+    mask-image: radial-gradient(circle,rgba(0, 0, 0, 0.5),50%);
+}
+
+
+.mask4{
+    /* position: relative; */
+    /* height: 150px; */
+    /* width: 150px; */
+    -webkit-mask-image:url(shadow.png);
+    mask-image: url(shadow.png);
+    mask-repeat: no repeat;
+}
+h6 {
+    font-size: 2rem;
+    font-weight: bolder;
+    background: url("pixel.jpg.jpg") center/cover no-repeat;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.button{
+    background-color: blue;
+    margin: 5px;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+     font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button2{
+   transition-duration: 2s;
+    /* background-color: rgb(255, 0, 0); */
+    border: none;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 15px 30px;
+     font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 5px solid black;
+}
+.button3{
+    /* opacity: 0.4; */
+    
+    border-radius: 50%;
+    background-color: rgb(0, 255, 0);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+     font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+.button3:after{
+    content: "→";
+    position: absolute;
+    right: 16px;
+    transition: all 0.3sec;
+
+}
+.button2:hover{
+    color: rgb(158, 0, 0);
+    background-color: rgb(36, 245, 36);
+    box-shadow:  5 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(209, 14, 14, 0.19);
+}
+.cont{
+    position: relative;
+    display: inline-block;
+}
+.cont img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.cont .btn{
+  position: absolute;   /* position on top of image */
+  bottom: 50%;         /* 20px from bottom */
+  left: 50%;            /* center horizontally */
+  transform: translateX(-50%);
+  
+  background: #db8534;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.image-container .btn:hover {
+  background: #2980b9;
+}
+.pagination{
+    display: inline-block;
+}
+.pagination a{
+    border: 2px solid blueviolet;
+    position: relative;
+    top: 5px;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 4px 19px;
+    background-color: #db8534;
+    margin: 0px 5px;
+    border-radius: 10px;
+    transition-duration: 2s;
+}
+.pagination a:active{
+    color: red;
+    background-color: darkgrey;
+    border: 1px blue;
+}
+.pagination a:hover{
+
+    color: pink;
+    background-color: midnightblue;
+}
+.count{
+    resize: vertical;
+    overflow: auto;
+    row-gap: 15px;
+    gap: 5px;
+    column-count: 4;
+    column-gap: 50px;
+    height: 200px;
+    overflow: visible;
+    column-rule-width: 2px;
+    column-rule-color: aqua;
+    width: 100px;
+    background-color: crimson;
+}
