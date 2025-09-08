@@ -60,6 +60,16 @@ a:active {
   background-color: #16a085;
   color: white;
 }
+button:focus{
+  font-weight: bold;
+  color: red;
+  background-color: #000000;
+}
+h2:focus{
+  color: red;
+  background-color: #000000;
+  outline:2px solid blueviolet ;
+}
 h2{
   position: relative;
   height: 50px;
