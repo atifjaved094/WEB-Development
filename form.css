@@ -1,0 +1,129 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+    background-color: blue;
+    border: solid 5px black;
+    outline: 3 px solid red;
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    color: coral;
+}
+nav{
+
+    margin-top: 5px;
+    background-color: rgb(219, 205, 233);
+    border: solid 3px orange;
+    outline: solid rgb(190, 24, 5) 2px ;
+    width: 100%;
+    height: 55px;
+}
+nav ul {
+    justify-content: left;
+    display: flex;
+    list-style: none;
+    padding: 15px;
+    gap: 20px;
+}
+nav ul a{
+    text-decoration: none;
+    color: rgb(245, 245, 255);
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+a:hover{
+    color: rgb(6, 42, 224);
+    background-color: rgb(230, 222, 222);
+}
+input[type=text], select, textarea, label[type=text] {
+  width: 100%;
+  margin-left: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  transition: width 0.4s ease-in;
+}
+input[type=text]::focus{
+    width: 100;
+}
+
+/* Style for labels */
+label {
+  font-weight: bold;
+}
+input[type=number]{
+    transition: width 0.1s ease-in-out;
+}
+input[type=number]:focus{
+width: 100%;
+}
+body{
+    counter-reset: Chapter;
+}
+h1{
+    counter-increment: Chapter;
+    counter-reset: Topic;
+}
+h1:before{
+    
+    content: "Chapter " counter(Chapter)":";
+}
+h3{
+    
+    counter-increment: Topic;
+    
+}
+h3:before{
+     content: counter(Chapter) "." counter(Topic)":";
+}
+.div{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.colum{
+    font-weight: bold;
+    background-color: rgb(141, 168, 114);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: solid  1px;
+}
+.div2{
+    display: flex;
+    gap: 10px;
+    margin-top: 7px;
+}
+.colum1{
+    float: left;
+    border: solid  1px;
+}
+.div2 h4{
+    background-color: rgb(216, 216, 233);
+}
+.colum2{
+
+    border: solid  1px; 
+} 
+.colum3{
+    width: 50px;
+     border: solid  1px;   
+}
+
+body{
+    background-image: linear-gradient(to right,pink, black); 
+    width: min(50%, 300px);
+} 
