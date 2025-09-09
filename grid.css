@@ -1,0 +1,128 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+  h1,h2{
+    color: transparent;
+    background: linear-gradient(blue,maroon);
+    /* background: url(phone.jpg) center/cover no-repeat; */
+    background-clip: text;
+  }
+  h3{
+    font-size: larger;
+    color: transparent;
+    background: url(solid.jpg);
+    background-clip: text;
+  }
+
+    body {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav main article"
+        "section section section"
+        "aside article2 article2"
+        "hello hello hello"
+        "footer footer footer";
+      grid-template-columns: 250px 1fr 1fr;
+      grid-template-rows: 70px auto auto auto 60px 100;
+      gap: 10px;
+      min-height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-image: radial-gradient(circle, pink, orange, purple, lightblue);
+      color: #000;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      grid-area: nav;
+      background-image: linear-gradient(rgb(129, 79, 79), blue, pink, lightblue);
+      color: #111;
+      text-align: center;
+      padding: 15px;
+    }
+    /* nav img{ if we set the width to 100% and height auto it will be responsive image 
+      width: 100%;
+      height: auto;
+    } */
+
+    nav ul {
+      display: grid;
+      gap: 5px;
+      font-weight: bold;
+      list-style: none;
+    }
+
+    main {
+      grid-area: main;
+      background: lightblue;
+      padding: 15px;
+    }
+
+    article {
+      grid-area: article;
+      background-color: aqua;
+      padding: 15px;
+    }
+
+    section {
+      grid-area: section;
+      background-image: radial-gradient(white, yellow, rgb(67, 67, 129), pink);
+      color: black;
+      padding: 15px;
+    }
+
+    section p {
+      background-color: rgb(15, 245, 245);
+      padding: 10px;
+    }
+
+    aside {
+      grid-area: aside;
+      background-color: rgb(102, 102, 224);
+      padding: 10px;
+      color: white;
+    }
+
+    aside p {
+      background-color: lightcoral;
+      padding: 5px;
+    }
+
+    .article2 {
+      grid-area: article2;
+      background: orange;
+      color: black;
+      padding: 15px;
+      min-width: 0;
+      overflow-wrap: break-word;
+    }
+
+    .article2 p {
+      background-color: aqua;
+      padding: 10px;
+    }
+    .hello{
+        grid-area: hello;
+        background-color: brown;
+        padding: 15px;
+        min-width: 0;
+        overflow-wrap: break-word;
+    }
+    .hello p{
+        background-color: aqua;
+        padding: 10px;
+    }
+    footer {
+      grid-area: footer;
+      background-image: linear-gradient(purple, orange, lightcoral);
+      color: rgba(0, 0, 0, 0.9);
+      padding: 20px;
+      text-align: center;
+    }
