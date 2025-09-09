@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout Example</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav main article"
+        "section section section"
+        "aside article2 article2"
+        "hello hello hello"
+        "footer footer footer";
+      grid-template-columns: 250px 1fr 1fr;
+      grid-template-rows: 70px auto auto auto 60px 100;
+      gap: 10px;
+      min-height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-image: radial-gradient(circle, pink, orange, purple, lightblue);
+      color: #000;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      grid-area: nav;
+      background-image: linear-gradient(rgb(129, 79, 79), blue, pink, lightblue);
+      color: #111;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav ul {
+      display: grid;
+      gap: 5px;
+      font-weight: bold;
+      list-style: none;
+    }
+
+    main {
+      grid-area: main;
+      background: lightblue;
+      padding: 15px;
+    }
+
+    article {
+      grid-area: article;
+      background-color: aqua;
+      padding: 15px;
+    }
+
+    section {
+      grid-area: section;
+      background-image: radial-gradient(white, yellow, rgb(67, 67, 129), pink);
+      color: black;
+      padding: 15px;
+    }
+
+    section p {
+      background-color: rgb(15, 245, 245);
+      padding: 10px;
+    }
+
+    aside {
+      grid-area: aside;
+      background-color: rgb(102, 102, 224);
+      padding: 10px;
+      color: white;
+    }
+
+    aside p {
+      background-color: lightcoral;
+      padding: 5px;
+    }
+
+    .article2 {
+      grid-area: article2;
+      background: orange;
+      color: black;
+      padding: 15px;
+      min-width: 0;
+      overflow-wrap: break-word;
+    }
+
+    .article2 p {
+      background-color: aqua;
+      padding: 10px;
+    }
+    .hello{
+        grid-area: hello;
+        background-color: brown;
+        padding: 15px;
+        min-width: 0;
+        overflow-wrap: break-word;
+    }
+    .hello p{
+        background-color: aqua;
+        padding: 10px;
+    }
+    footer {
+      grid-area: footer;
+      background-image: linear-gradient(purple, orange, lightcoral);
+      color: rgba(0, 0, 0, 0.9);
+      padding: 20px;
+      text-align: center;
+    }
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Inside Text</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    font-family: sans-serif;
+  }
+
+  h1,h2{
+    color: transparent;
+    background: linear-gradient(blue,maroon);
+    /* background: url(phone.jpg) center/cover no-repeat; */
+    background-clip: text;
+  }
+
+</style>
+</head>
+<body>
+</body>
+</html>
+
+  </style>
+</head>
+<body>
+  <header><h1>This is Header</h1></header>
+  <nav>
+    <ul>
+      <li>Nav 1</li>
+      <li>Nav 2</li>
+      <li>Nav 3</li>
+      <li>Nav 4</li>
+      <li>Nav 5</li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>This is Main</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ipsa mollitia illum pariatur modi quo.</p>
+  </main>
+
+  <article>
+    <h2>This is Article 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo laboriosam quaerat reprehenderit.</p>
+  </article>
+
+  <section>
+    <h2>This is Main Section </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod odit iusto quisquam beatae sequi id aliquid blanditiis necessitatibus unde? Sed iure rerum culpa amet quibusdam corrupti consequatur.</p>
+  </section>
+
+  <aside>
+    <h3>This is Aside</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sequi autem, quidem cupiditate accusamus.</p>
+  </aside>
+
+  <article class="article2">
+    <h2>This is Article 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta assumenda repellat, incidunt itaque doloremque nam a minima impedit aliquam?</p>
+  </article>
+  <section class="hello"><h2>This is another section body</h2>
+<p>asjkdsjkahdjkashdkjashfkjsdfjksaf Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et cum nisi rem esse dolor hic tempora, iusto vitae, repudiandae debitis porro at sed nobis, consequuntur ex quo. Consectetur, reiciendis ipsum nulla tempora eligendi expedita est quas quia dolorem optio doloribus dicta accusantium dolores quae placeat totam odit architecto aperiam?</p></section>
+
+  <footer><p>This is the Footer</p></footer>
+</body>
+</html>
