@@ -1,0 +1,82 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(190deg, rgb(53, 31, 31), rgb(0, 0, 0), rgb(223, 15, 15));
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .login_box {
+            width: 350px;
+            padding: 40px 30px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .login_box h1 {
+            margin-bottom: 30px;
+            color: rgb(100, 6, 6);
+        }
+
+        .login_box input[type="text"],
+        .login_box input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1.5px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .login_box input[type="text"]:focus,
+        .login_box input[type="password"]:focus {
+            border-color: blue ;
+            outline: none;
+            box-shadow: 5px 2px 20px rgba(209, 16, 235, 0.5);
+        }
+
+        .login_box button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 6px;
+            background-color: rgb(100, 6, 6);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login_box button:hover {
+            background-color: #6a11cb;
+        }
+
+        .login_box a {
+            display: block;
+            margin-top: 15px;
+            color: rgb(100, 6, 6);
+            text-decoration: none;
+        }
+
+        .login_box a:hover {
+            text-decoration: underline;
+        }
+        @media screen and (max-width:350px){
+            .login_box{
+                background-color: aqua;
+            }
+            body{
+                background: lightcoral;
+            }
+        }
