@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head">This is head one </h1>
+    <p class="para">This is the paragraph</p>
+    <button id="btn" type="button">Click Me</button>
+
+<script>
+    // styling the button
+    document.getElementById("btn").style.backgroundColor="red";
+    document.getElementById("btn").style.color="yellow";
+
+    let hello = document.getElementById("btn");
+    hello.addEventListener("dblclick", heading);
+
+    function heading() {
+        alert("Hello I am a button");}
+        
+        // array with duplicate values
+        let jacky = [1, 2, 3, 4, 4, 5, 5, 6, 7];
+
+        // make unique values using Set
+        let single = [...new Set(jacky)];
+
+        // show unique numbers
+        document.write("Unique numbers: " + single + "<br><br>");
+
+        // print numbers 0–10
+        for (let i = 0; i <= 10; i++) {
+            document.write(i);
+        }
+</script>
+</body>
+</html>
